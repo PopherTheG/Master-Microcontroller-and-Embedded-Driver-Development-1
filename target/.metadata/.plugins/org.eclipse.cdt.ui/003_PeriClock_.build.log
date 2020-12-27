@@ -1,0 +1,10 @@
+09:56:07 **** Build of configuration Debug for project 003_PeriClock_ ****
+make -j8 all 
+arm-none-eabi-size   003_PeriClock_.elf 
+   text	   data	    bss	    dec	    hex	filename
+    716	      8	   1568	   2292	    8f4	003_PeriClock_.elf
+Finished building: default.size.stdout
+ 
+
+09:56:08 Build Finished. 0 errors, 0 warnings. (took 903ms)
+
