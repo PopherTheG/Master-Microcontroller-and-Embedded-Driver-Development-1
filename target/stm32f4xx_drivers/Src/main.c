@@ -22,8 +22,9 @@
 #endif
 
 #include "stm32f407xx.h"
-
+#include <stdio.h>
 int main(void)
 {
+
 	for(;;);
 }
