@@ -25,25 +25,25 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  10 ._user_heap_stack 00000604  2000001c  080002ac  0002001c  2**0
                   ALLOC
- 11 .ARM.attributes 00000030  00000000  00000000  000102ac  2**0
+ 11 .ARM.attributes 0000002a  00000000  00000000  000102ac  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00000068  00000000  00000000  000102dc  2**0
+ 12 .debug_info   000008c0  00000000  00000000  000102d6  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_abbrev 0000004e  00000000  00000000  00010344  2**0
+ 13 .debug_abbrev 00000177  00000000  00000000  00010b96  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_aranges 00000048  00000000  00000000  00010398  2**3
+ 14 .debug_aranges 00000048  00000000  00000000  00010d10  2**3
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_ranges 00000030  00000000  00000000  000103e0  2**3
+ 15 .debug_ranges 00000030  00000000  00000000  00010d58  2**3
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_macro  00000a81  00000000  00000000  00010410  2**0
+ 16 .debug_macro  00001ec6  00000000  00000000  00010d88  2**0
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_line   0000013e  00000000  00000000  00010e91  2**0
+ 17 .debug_line   00000658  00000000  00000000  00012c4e  2**0
                   CONTENTS, READONLY, DEBUGGING
- 18 .debug_str    00002d70  00000000  00000000  00010fcf  2**0
+ 18 .debug_str    00008e88  00000000  00000000  000132a6  2**0
                   CONTENTS, READONLY, DEBUGGING
- 19 .comment      0000007b  00000000  00000000  00013d3f  2**0
+ 19 .comment      0000007b  00000000  00000000  0001c12e  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000054  00000000  00000000  00013dbc  2**2
+ 20 .debug_frame  00000054  00000000  00000000  0001c1ac  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -80,11 +80,12 @@ Disassembly of section .text:
 #endif
 
 #include "stm32f407xx.h"
-
+#include <stdio.h>
 int main(void)
 {
  80001e8:	b480      	push	{r7}
  80001ea:	af00      	add	r7, sp, #0
+
 	for(;;);
  80001ec:	e7fe      	b.n	80001ec <main+0x4>
 	...
